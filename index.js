@@ -14,8 +14,7 @@ const app = express();
 app.use(
   cookieSession({
     maxAge: 30 * 24 * 60 * 60 * 1000, // expires after 30 days in milliseconds
-    keys: [keys.cookieKey],            // encrpytion key
-    proxy: true
+    keys: [keys.cookieKey]            // encrpytion key
   })
 );
 
